@@ -5,14 +5,22 @@
 
 
 class Hero {
-     alterEgo: string;
-     age: number;
-     realName: string;
+    //  alterEgo: string;
+    //  age: number;
+    //  realName: string;
 
-    printName() {
-        return this.alterEgo + ' ' + this.realName;
+    // constructor( alterEgo: string ) {
+    //     this.alterEgo = alterEgo;
+    // }
+
+    constructor(
+        public alterEgo: string,
+        public age: number,
+        public realName: string
+    ) {}
     }
-}
 
 
- const superman = new Hero();
+ const wally = new Hero( 'Flash', 20, 'Wally West');
+
+ console.log( wally )
