@@ -1,4 +1,4 @@
-import { Product, calculateIVA } from './exercises/06-functionDestructuring';
+import { Product, calculateIVA } from './06-functionDestructuring';
 /*
     ===== Código de TypeScript =====
 */

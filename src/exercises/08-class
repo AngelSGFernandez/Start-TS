@@ -1,0 +1,32 @@
+class SecretIdentity {
+
+    constructor(
+        public name: string,
+        public address: string
+    ) {}
+}
+
+class Hero extends  SecretIdentity {
+    //  alterEgo: string;
+    //  age: number;
+    //  realName: string;
+
+    // constructor( alterEgo: string ) {
+    //     this.alterEgo = alterEgo;
+    // }
+
+    constructor(
+        public alterEgo: string,
+        public age: number,
+        public realName: string
+    ) {
+        super( realName, 'Central city, EUA')
+    }
+
+
+    }
+
+
+ const wally = new Hero( 'Flash', 20, 'Wally West');
+
+ console.log( wally )
